@@ -10,7 +10,7 @@ import fetchRates from "./fetchRates";
 
 jest.mock("./fetchRates");
 
-test("renders learn react link", async () => {
+test("we can convert from euros", async () => {
   fetchRates.mockResolvedValueOnce({ RUB: 68.9685, USD: 1.0816 });
 
   render(<App />);
